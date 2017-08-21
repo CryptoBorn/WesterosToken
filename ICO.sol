@@ -167,6 +167,9 @@ contract MintableToken is StandardToken, Ownable {
 
   bool public mintingFinished = false;
 
+  string public name = "Useless Ethereum Token";		
+  string public symbol = "UET";		
+  uint256 public decimals = 18;		
 
   modifier canMint() {
     require(!mintingFinished);
